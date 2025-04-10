@@ -1,36 +1,90 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyecto LSIII</title>
-    <style>
-        footer {
-            background-color: #2c3e50;
-            color: white;
-            padding: 20px 0;
-            text-align: center;
-            margin-top: 30px;
-        }
-        .footer-content {
-            max-width: 800px;
-            margin: 0 auto;
-        }
-    </style>
-</head>
-<body>
-    <footer>
-        <div class="footer-content">
+<!-- FOOTER - Julian Vargas (P3) -->
+<footer class="site-footer">
+    <div class="footer-container">
+        <div class="footer-section">
             <h3>Equipo LSIII 2023</h3>
-            <p>© 2023 Todos los derechos reservados</p>
-            <p>Integrantes: 
-                Juan Pablo, 
-                Julian Fuentes, 
-                Julian Vargas
-            </p>
-            <p>Universidad San Buenaventura - Laboratorio</p>
+            <ul class="team-members">
+                <li>Juan Isaziga - Header (P1)</li>
+                <li>Julian Fuentes - Body (P2)</li>
+                <li>Julian Vargas - Footer (P3)</li>
+            </ul>
         </div>
-    </footer>
-    <!-- footer (añadido por P3) -->
-</body>
-</html>
+        
+        <div class="footer-section">
+            <h3>Información del Curso</h3>
+            <p>Laboratorio de software</p>
+            <p>Universidad San Buenaventura - 2025-1</p>
+        </div>
+    </div>
+    
+    <div class="footer-bottom">
+        <p>&copy; 2025 Todos los derechos reservados</p>
+    </div>
+</footer>
+
+<style>    
+    .site-footer {
+        background-color: #2c3e50;
+        color: #ecf0f1;
+        padding: 30px 0 0;
+        margin-top: 40px;
+        font-family: 'Arial', sans-serif;
+    }
+    
+    .footer-container {
+        display: flex;
+        justify-content: space-around;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+        flex-wrap: wrap;
+    }
+    
+    .footer-section {
+        flex: 1;
+        min-width: 250px;
+        margin-bottom: 20px;
+        padding: 0 15px;
+    }
+    
+    .footer-section h3 {
+        color: #f39c12;
+        margin-bottom: 15px;
+        font-size: 1.2em;
+    }
+    
+    .team-members {
+        list-style-type: none;
+        padding: 0;
+    }
+    
+    .team-members li {
+        margin-bottom: 8px;
+        position: relative;
+        padding-left: 20px;
+    }
+    
+    .team-members li:before {
+        content: "•";
+        color: #f39c12;
+        position: absolute;
+        left: 0;
+    }
+    
+    .footer-bottom {
+        text-align: center;
+        padding: 15px 0;
+        background-color: #1a252f;
+        margin-top: 20px;
+    }
+    
+    @media (max-width: 768px) {
+        .footer-container {
+            flex-direction: column;
+        }
+        
+        .footer-section {
+            margin-bottom: 30px;
+        }
+    }
+</style>
